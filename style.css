@@ -1,111 +1,48 @@
-* {
-	margin: 0;
-	padding: 0;
-}
-body {
-	font-family: 'Poppins', sans-serif;
-}
-.wrapper {
-	width: 1170px;
-	margin: auto;
-}
-header {
-	background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(https://i1.wp.com/owdin.live/wp-content/uploads/2016/11/3065816-inline-i-2-google-earth-in-vr-is-a-love-letter-to-our-cities.gif?fit=640%2C360&ssl=1);
-	height: 100vh;
-	-webkit-background-size: cover;
-	background-size: cover;
-	background-position: center center;
-	position: relative;
-}
-.nav-area {
-	float: right;
-	list-style: none;
-	margin-top: 30px;
-}
-.nav-area li {
-	display: inline-block;
-}
-.nav-area li a {
-	color: #fff;
-	text-decoration: none;
-	padding: 5px 20px;
-	font-family: poppins;
-	font-size: 16px;
-	text-transform: uppercase;
-}
-.nav-area li a:hover {
-	background: #fff;
-	color: #333;
-}
-.logo {
-	float: left;
-}
-.logo img {
-	width: 100%;
-	padding: 15px 0;
-}
-.welcome-text {
-	position: absolute;
-	width: 600px;
-	height: 300px;
-	margin: 20% 30%;
-	text-align: center;
-}
-.welcome-text h1 {
-	text-align: center;
-	color: #fff;
-	text-transform: uppercase;
-	font-size: 60px;
-}
-.welcome-text h1 span {
-	color: #00fecb;
-}
-.welcome-text a {
-	border: 1px solid #fff;
-	padding: 10px 25px;
-	text-decoration: none;
-	text-transform: uppercase;
-	font-size: 14px;
-	margin-top: 20px;
-	display: inline-block;
-	color: #fff;
-}
-.welcome-text a:hover {
-	background: #fff;
-	color: #333;
-}
-/*resposive*/
-
-@media (max-width:600px) {
-	.wrapper {
-		width: 100%;
-	}
-	.logo {
-		float: none;
-		width: 50%;
-		text-align: center;
-		margin: auto;
-	}
-	img {
-		width: ;
-	}
-	.nav-area {
-		float: none;
-		margin-top: 0;
-	}
-	.nav-area li a {
-		padding: 5px;
-		font-size: 11px;
-	}
-	.nav-area {
-		text-align: center;
-	}
-	.welcome-text {
-		width: 100%;
-		height: auto;
-		margin: 30% 0;
-	}
-	.welcome-text h1 {
-		font-size: 30px;
-	}
-}
+@media screen and (min-width: 800px) {
+    .container {
+      margin: 1em 2em;
+    }
+  } 
+  target / context = result 
+  .col {
+    width: 6.25%; /* 60 / 960 = 0.0625 */
+  } 
+  .container {
+    column-count: 3;
+  } 
+  .container {
+    column-width: 10em;
+  } 
+  .container {
+    display: flex;
+  }
+  
+  .item {
+    flex: 1;
+  } 
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  } 
+  img {
+    max-width: 100%:
+  } 
+  html {
+    font-size: 1em;
+  }
+  
+  h1 {
+    font-size: 2rem;
+  }
+  
+  @media (min-width: 1200px) {
+    h1 {
+      font-size: 4rem;
+    }
+  }
+  h1 {
+    font-size: 6vw;
+  }
+  h1 {
+    font-size: calc(1.5rem + 3vw);
+  }
