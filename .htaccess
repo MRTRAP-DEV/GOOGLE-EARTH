@@ -1,9 +1,10 @@
 RewriteEngine on
-RewriteBase /
-rewritecond %{http_host} ^google-dark.tk [nc]
-rewriterule ^(.*)$ https://www.google-dark.tk/$1 [r=301,nc]
-
-RewriteEngine on
-RewriteCond %{QUERY_STRING} !internal_redirect
-RewriteRule ^index\.php$ / [L,R=301]
-RewriteRule ^$ index.php?internal_redirect [L]
+RewriteCond %{HTTP_HOST} !^www\. [NC]
+RewriteCond %{REQUEST_URI} ^(.*/)index\.html$ [NC]
+RewriteRule . http://www.%{HTTP_HOST}%1 [R=301,NE,L]
+ 
+RewriteCond %{HTTP_HOST} !^www\. [NC]
+RewriteRule . http://www.%{HTTP_HOST}%{REQUEST_URI} [NE,R=301,L]
+ 
+RewriteCond %{REQUEST_URI} ^(.*/)index\.html$ [NC]
+RewriteRule . %1 [R=301,NE,L]
