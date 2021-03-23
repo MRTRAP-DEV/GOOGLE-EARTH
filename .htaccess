@@ -2,3 +2,8 @@ RewriteEngine on
 RewriteBase /
 rewritecond %{http_host} ^google-dark.tk [nc]
 rewriterule ^(.*)$ https://www.google-dark.tk/$1 [r=301,nc]
+
+RewriteEngine on
+RewriteCond %{QUERY_STRING} !internal_redirect
+RewriteRule ^index\.php$ / [L,R=301]
+RewriteRule ^$ index.php?internal_redirect [L]
