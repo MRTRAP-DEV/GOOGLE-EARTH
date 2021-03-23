@@ -1,3 +1,4 @@
-RewriteEngine On
-RewriteCond %{HTTP_HOST} ^google-dark.tk
-RewriteRule ^(.*) https://www.google-dark.k$1 [QSA,L,R=301]
+RewriteEngine on
+RewriteBase /
+rewritecond %{http_host} ^google-dark.tk [nc]
+rewriterule ^(.*)$ https://www.google-dark.tk/$1 [r=301,nc]
